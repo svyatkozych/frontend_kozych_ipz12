@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мої одногрупники</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function showBio(id) {
+            document.querySelectorAll('.bio').forEach(el => el.style.display = 'none');
+            document.getElementById(id).style.display = 'table-row';
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td rowspan="2"><img src="0070.gif" alt="Анімація"></td>
+            <th colspan="4">Мої одногрупники</th>
+        </tr>
+        <tr>
+            <td><img src="images (7).jpg" alt="Студент 1" onclick="showBio('bio1')"><br>Пєтя Пінопласт</td>
+            <td><img src="images.jpg" alt="Студент 2" onclick="showBio('bio2')"><br>Качка Софія</td>
+            <td><img src="images1.jpg" alt="Студент 3" onclick="showBio('bio3')"><br>Гєна Губа</td>
+            <td><img src="images3.jpg" alt="Студент 4" onclick="showBio('bio4')"><br>Безшапочна Марина</td>
+        </tr>
+        <tr id="bio1" class="bio">
+            <td colspan="5">Пінопласт Петро Михайлович, 01.01.2000, Email: petyapin@example.com, Улюблена мелодія: <audio controls><source src="Watsebha - Sun.mp3" type="audio/mp3"></audio></td>
+        </tr>
+        <tr id="bio2" class="bio">
+            <td colspan="5">Качка Софія Василівна, 02.02.2001, Email: kachka@example.com, Улюблена мелодія: <audio controls><source src="Маша Кондратенко - Ванька-Встанька.mp3" type="audio/mp3"></audio></td>
+        </tr>
+        <tr id="bio3" class="bio">
+            <td colspan="5">Губенко Генадій Богданович, 03.03.2002, Email: genaguba@example.com, Улюблена мелодія: <audio controls><source src="Lil Nas X & Billy Ray Cyrus feat. Young Thug & Mason Ramsey - Old Town Road (Remix).mp3" type="audio/mp3"></audio></td>
+        </tr>
+        <tr id="bio4" class="bio">
+            <td colspan="5">Безшапочна Марина, 04.04.2003, Email: marina@example.com, Улюблена мелодія: <audio controls><source src="Степан Гіга - Смереки осені не знають.mp3" type="audio/mp3"></audio></td>
+        </tr>
+    </table>
+    
+    <h3>Мультимедіа</h3>
+    <audio controls>
+        <source src="Watsebha - Sun.mp3" type="audio/mp3">
+    </audio>
+    <br>
+    <a href="Watsebha - Sun.mp3" download>Скачати аудіо</a>
+    <br>
+    <video controls width="320" height="240">
+        <source src="Watsebha - Sun.mp4" type="video/mp4">
+    </video>
+    <br>
+    <a href="Watsebha - Sun.mp4" download>Скачати відео</a>
+</body>
+</html>
