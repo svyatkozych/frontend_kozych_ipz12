@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS </title>
+    <style>
+        .position-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 100px;
+        }
+        .static { position: static; }
+        .relative { position: relative; left: 20px; }
+        .absolute { position: absolute; top: 20px; left: 20px; }
+        .fixed { position: fixed; top: 10px; right: 10px; }
+        .sticky { position: sticky; top: 10px; }
+        
+        .float-container {
+            overflow: auto;
+        }
+        .float-left { float: left; }
+        .float-right { float: right; }
+        
+        .clear-both { clear: both; }
+        
+        .z-container {
+            position: relative;
+        }
+        .z-box {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+        }
+        .z1 { background-color: red; z-index: 1; left: 30px; top: 30px; }
+        .z2 { background-color: blue; z-index: 2; left: 50px; top: 50px; }
+    </style>
+</head>
+<body>
+    <h1>CSS Positioning Demo</h1>
+    
+    <h2>Position</h2>
+    <div class="position-container">
+        <div class="box static">Static</div>
+        <div class="box relative">Relative</div>
+        <div class="box absolute">Absolute</div>
+        <div class="box fixed">Fixed</div>
+        <div class="box sticky">Sticky</div>
+    </div>
+    
+    <h2>Float</h2>
+    <div class="float-container">
+        <div class="box float-left">Left</div>
+        <div class="box float-right">Right</div>
+    </div>
+    <div class="clear-both">Cleared</div>
+    
+    <h2>Z-index</h2>
+    <div class="z-container">
+        <div class="z-box z1">Z-1</div>
+        <div class="z-box z2">Z-2</div>
+    </div>
+    <a href="lab4.html">Назад</a>
+</body>
+</html>
