@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    margin: 0;
+    padding: 0;
+    perspective: 1000px; /* Перспектива для 3D ефектів */
+}
+
+header, nav, main, section, article, aside, footer {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background: #fff;
+    outline: 2px solid #444;
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+}
+
+header {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 40px; /* Зміщення хедера вниз */
+    transform: translate3d(0, 0, 0); /* Початкове переміщення по осі Z */
+    will-change: transform, text-shadow; /* Підготовка до 3D трансформацій */
+}
+
+header:hover {
+    color: #ff5e62;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transform: translate3d(0, 0, 100px) rotateY(20deg); /* Переміщення по осі Z та обертання по осі Y */
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background: radial-gradient(circle, #ff5e62, #ff9966);
+    color: white;
+    cursor: pointer;
+    margin-top: 20px; /* Зміщення навігації вниз */
+    transform: translate3d(0, 0, 0); /* Початкове переміщення по осі Z */
+    will-change: transform, background, color; /* Підготовка до 3D трансформацій */
+}
+
+nav:hover {
+    background: radial-gradient(circle, #ff9966, #ff5e62);
+    color: #333;
+    transform: translate3d(0, 0, 50px) rotateX(15deg); /* Переміщення та обертання */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff5e62;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    transition: transform 0.3s ease;
+}
+
+section {
+    flex: 2;
+    transition: transform 0.3s ease;
+}
+
+aside {
+    flex: 1;
+    transition: transform 0.3s ease;
+}
+
+img {
+    width: 100%;
+    border-radius: 15px;
+    border: 10px solid transparent;
+    border-image-source: url('img/border.png');
+    border-image-slice: 30%;
+    border-image-repeat: stretch;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1) translate3d(50px, 50px, 50px); /* Збільшення та переміщення зображення в 3D-просторі */
+    filter: brightness(1.2);
+}
+
+.resizable {
+    resize: both;
+    overflow: auto;
+}
+
+input {
+    caret-color: red;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: blue;
+}
