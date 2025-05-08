@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Музичні Інструменти</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">MusicShop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item"><a class="nav-link active" href="#">Головна</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Категорії</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Гітари</a></li>
+                <li><a class="dropdown-item" href="#">Барабани</a></li>
+                <li><a class="dropdown-item" href="#">Клавішні</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Пошук">
+            <button class="btn btn-outline-light" type="submit">Знайти</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="image1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="image2.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-3 bg-light p-3">Ліва колонка</div>
+        <div class="col-md-6 bg-secondary text-white p-3">Центральна колонка</div>
+        <div class="col-md-3 bg-light p-3">Права колонка</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="guitar.jpg" class="card-img-top" alt="Гітара">
+            <div class="card-body">
+              <h5 class="card-title">Акустична гітара</h5>
+              <p class="card-text">Чудовий інструмент для початківців.</p>
+              <a href="#" class="btn btn-primary">Детальніше</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="piano.jpg" class="card-img-top" alt="Піаніно">
+            <div class="card-body">
+              <h5 class="card-title">Цифрове піаніно</h5>
+              <p class="card-text">Сучасне звучання та компактний розмір.</p>
+              <a href="#" class="btn btn-primary">Детальніше</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="drums.jpg" class="card-img-top" alt="Барабани">
+            <div class="card-body">
+              <h5 class="card-title">Барабанна установка</h5>
+              <p class="card-text">Ідеально для ритму та драйву.</p>
+              <a href="#" class="btn btn-primary">Детальніше</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="violin.jpg" class="card-img-top" alt="Скрипка">
+            <div class="card-body">
+              <h5 class="card-title">Скрипка</h5>
+              <p class="card-text">Класичний інструмент з багатою історією.</p>
+              <a href="#" class="btn btn-primary">Детальніше</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="saxophone.jpg" class="card-img-top" alt="Саксофон">
+            <div class="card-body">
+              <h5 class="card-title">Саксофон</h5>
+              <p class="card-text">Джазове звучання і стиль.</p>
+              <a href="#" class="btn btn-primary">Детальніше</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="synth.jpg" class="card-img-top" alt="Синтезатор">
+            <div class="card-body">
+              <h5 class="card-title">Синтезатор</h5>
+              <p class="card-text">Електронне звучання для сучасної музики.</p>
+              <a href="#" class="btn btn-primary">Детальніше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <h2>Зв’язатися з нами</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Ім’я</label>
+          <input type="text" class="form-control" id="name">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Повідомлення</label>
+          <textarea class="form-control" id="message" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Відправити</button>
+      </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
