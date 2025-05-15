@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Форма та CSS-псевдокласи/псевдоелементи</title>
+  <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+
+  <h1>Демонстрація HTML-форм та CSS-псевдоелементів</h1>
+
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Однорядкове текстове поле</legend>
+      <label for="name">Ім'я:</label>
+      <input type="text" id="name" name="name" placeholder="Введіть ім’я" required maxlength="30" autofocus>
+    </fieldset>
+
+    <fieldset>
+      <legend>Багаторядкове текстове поле</legend>
+      <label for="message">Повідомлення:</label><br>
+      <textarea id="message" name="message" rows="4" cols="50" placeholder="Напишіть щось..."></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>Різні типи input</legend>
+      <label for="password">Пароль:</label>
+      <input type="password" id="password" name="password" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="range">Діапазон (1-10):</label>
+      <input type="range" id="range" name="range" min="1" max="10">
+    </fieldset>
+
+    <fieldset>
+      <legend>Radio-перемикачі</legend>
+      <p>Оберіть стать:</p>
+      <input type="radio" id="male" name="gender" value="Чоловік" checked>
+      <label for="male">Чоловік</label><br>
+
+      <input type="radio" id="female" name="gender" value="Жінка">
+      <label for="female">Жінка</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Прапорці (Checkbox)</legend>
+      <p>Оберіть улюблені кольори:</p>
+      <input type="checkbox" id="red" name="color" value="Червоний" checked>
+      <label for="red">Червоний</label><br>
+
+      <input type="checkbox" id="green" name="color" value="Зелений">
+      <label for="green">Зелений</label><br>
+
+      <input type="checkbox" id="blue" name="color" value="Синій">
+      <label for="blue">Синій</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Випадаючий список</legend>
+      <label for="city">Місто:</label>
+      <select id="city" name="city">
+        <optgroup label="Україна">
+          <option value="kyiv">Київ</option>
+          <option value="lviv">Львів</option>
+        </optgroup>
+        <optgroup label="Польща">
+          <option value="warsaw">Варшава</option>
+          <option value="krakow">Краків</option>
+        </optgroup>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Список множинного вибору</legend>
+      <label for="fruits">Оберіть фрукти:</label><br>
+      <select id="fruits" name="fruits" multiple size="4">
+        <option value="apple">Яблуко</option>
+        <option value="banana">Банан</option>
+        <option value="cherry">Вишня</option>
+        <option value="grape">Виноград</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Кнопки</legend>
+      <input type="submit" value="Надіслати">
+      <input type="reset" value="Очистити форму">
+      <input type="button" value="Click me!" onclick='alert("Oh, you have been clicked me!!!")'>
+    </fieldset>
+  </form>
+
+  <hr>
+
+  <p class="pseudo-demo">
+    Це приклад тексту з демонстрацією ::before, ::after, ::first-letter та ::first-line.
+  </p>
+
+  <hr>
+
+</body>
+</html>

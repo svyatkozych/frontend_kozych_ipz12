@@ -1,0 +1,45 @@
+.pseudo-demo::before {
+    content: "⇨ ";
+      color: blue;
+    }
+    .pseudo-demo::after {
+      content: " ⇦";
+      color: red;
+    }
+    .pseudo-demo::first-letter {
+      font-size: 200%;
+      color: darkgreen;
+    }
+    .pseudo-demo::first-line {
+      font-weight: bold;
+    }
+
+    a:link {
+      color: blue;
+    }
+    a:visited {
+      color: purple;
+    }
+    a:hover {
+      color: red;
+      text-decoration: underline;
+    }
+    a:active {
+      color: orange;
+    }
+    input:valid {
+      border: 2px solid green;
+    }
+    input:invalid {
+      border: 2px solid red;
+    }
+    input:checked + label {
+      font-weight: bold;
+      color: green;
+    }
+    input:not(:checked) + label {
+      color: gray;
+    }
+    textarea:read-write {
+      background-color: #e0ffe0;
+    }
