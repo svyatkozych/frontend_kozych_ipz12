@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завантаження файлу</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; margin-top: 50px; }
+        .download-button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .download-button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+
+    <h1>Завантажте мій файл</h1>
+    
+    <a href="3д портфоліо – копія (3).pdf" download class="download-button">
+        Натисніть тут, щоб завантажити PDF
+    </a>
+
+</body>
+</html>
